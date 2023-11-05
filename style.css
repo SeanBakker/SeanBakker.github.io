@@ -29,12 +29,12 @@ header {
 }
 
 main {
-  .display {
+  .display-section {
     padding: 0px;
     margin: 0px;
     border: none;
 
-    .displayImages {
+    .display-images {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       max-width: 100%;
@@ -51,14 +51,70 @@ main {
 
   .sub-header {
     padding: 1px 0;
-    margin: 1px 0;
+    margin: 0px;
+    /* border: 1px solid #ccc; */
+  }
+
+  .flavor-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-items: center;
+
+      .button {
+        background-color: #ffc9c9;
+        width: 10%;
+        height: 10%;
+      }
+
+      .button:hover {
+        cursor: pointer;
+      }
+
+      .prev-button {
+        margin-left: 50%;
+      }
+
+      .next-button {
+        margin-right: 50%;
+      }
+    }
+
+    .flavor-image {
+      width: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .flavor-list {
+      list-style: none;
+      align-self: center;
+      text-align: left;
+      padding: 0;
+      padding-left: 20%;
+
+      :hover {
+        cursor: pointer;
+      }
+
+      .selected::before {
+        content: '\003E';
+        color: #f158b7;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
   }
 }
 
 section {
   padding: 20px;
-  margin: 20px 0;
-  border: 1px solid #ccc;
+  /* margin: 20px 0; */
+  /* border: 1px solid #ccc; */
 }
 section h2 {
   font-size: 24px;

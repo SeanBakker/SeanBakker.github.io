@@ -14,38 +14,32 @@
     </header>
 
     <main>
-        <section class="display">
-            <div class="displayImages">
-                <img src="resources/images/flavours/biscoffCookieButter.jpeg" class="image">
-                <img src="resources/images/flavours/cookieMonster.jpg" class="image">
-                <img src="resources/images/flavours/s'moresChocolateChip.jpg" class="image">
+        <section class="display-section">
+            <div class="display-images">
+                <img src="resources/images/display/originalCookies.jpeg" class="image">
+                <img src="resources/images/display/velvetMonsterButterCookies.jpg" class="image">
+                <img src="resources/images/display/boxedCookies.jpg" class="image">
             </div>
         </section>
 
         <header class="sub-header">
             <h2 class="sub-header-text">Cookie Flavours</h2>
         </header>
-        <section>
-            <ul>
-                <li>
-                    <img src="test.jpeg" alt="Chocolate Chip Walnut"> Chocolate Chip Walnut
-                </li>
-                <li>
-                    <img src="test.jpeg" alt="Double Dark Chocolate Chip"> Double Dark Chocolate Chip
-                </li>
-                <li>
-                    <img src="test.jpeg" alt="Ube White Chocolate Dream"> Ube White Chocolate Dream
-                </li>
-                <li>
-                    <img src="test.jpeg" alt="S'mores Chocolate Chip"> S'mores Chocolate Chip
-                </li>
-                <li>
-                    <img src="test.jpeg" alt="Cookie Monster"> Cookie Monster
-                </li>
-                <li>
-                    <img src="test.jpeg" alt="Biscoff Cookie Butter"> Biscoff Cookie Butter
-                </li>
+
+        <section class="flavor-section">
+            <ul class="flavor-list">
+                <li>Chocolate Chip Walnut</li>
+                <li>Double Dark Chocolate Chip</li>
+                <li>Ube White Chocolate Dream</li>
+                <li>S'mores Chocolate Chip</li>
+                <li>Cookie Monster</li>
+                <li>Biscoff Cookie Butter</li>
             </ul>
+            <div class="image-container">
+                <button class="button prev-button" onclick="showPrevImage()">&lt;</button>
+                <img src="resources/images/flavours/chocolateChipWalnut.jpeg" class="flavor-image" id="flavorImage">
+                <button class="button next-button" onclick="showNextImage()">&gt;</button>
+            </div>
         </section>
 
         <section>
@@ -58,6 +52,6 @@
         <p>&copy; 2023 The Chunky Cookie</p>
     </footer>
 
-    <!-- <script src="scripts/main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>
