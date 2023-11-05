@@ -29,6 +29,8 @@ header {
 }
 
 main {
+  display: grid;
+
   .display-section {
     padding: 0px;
     margin: 0px;
@@ -67,6 +69,7 @@ main {
 
       .button {
         background-color: #ffc9c9;
+        border-width: 1px;
         width: 10%;
         height: 10%;
       }
@@ -107,6 +110,18 @@ main {
         font-weight: bold;
         margin-right: 5px;
       }
+    }
+  }
+
+  .order-section {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 10%;
+
+    .button {
+      background-color: #ffc9c9;
+      border-width: 1px;
     }
   }
 }
