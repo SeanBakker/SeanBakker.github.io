@@ -38,6 +38,7 @@ function showNextImage() {
 }
 
 function updateImage(selectedFlavorIndex) {
+    currentImage = selectedFlavorIndex;
     document.getElementById('flavorImage').src = imagePaths[selectedFlavorIndex];
 }
 
