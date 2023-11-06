@@ -32,8 +32,8 @@ main {
   display: grid;
 
   .display-section {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     border: none;
 
     .display-images {
@@ -41,7 +41,7 @@ main {
       grid-template-columns: repeat(3, 1fr);
       max-width: 100%;
       max-height: 600px;
-      padding: 0px;
+      padding: 0;
       /* padding-bottom: 5px; */
       
       .image {
@@ -53,63 +53,34 @@ main {
 
   .sub-header {
     padding: 1px 0;
-    margin: 0px;
-    /* border: 1px solid #ccc; */
+    margin: 0;
   }
 
-  .flavor-section {
+  .flavour-section {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
 
     .image-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      align-items: center;
-      justify-items: center;
+      display: flex;
 
-      .button {
-        background-color: #ffc9c9;
-        border-width: 1px;
-        width: 10%;
-        height: 10%;
+      .slideshow {
+        width: 80vw;
+        max-width: 80vw;
+        overflow: hidden;
+        position: relative;
       }
 
-      .button:hover {
+      .slideshow:hover {
         cursor: pointer;
-      }
-
-      .prev-button {
-        margin-left: 50%;
-      }
-
-      .next-button {
-        margin-right: 50%;
       }
     }
 
-    .flavor-image {
-      width: 300px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .flavor-list {
-      list-style: none;
-      align-self: center;
-      text-align: left;
-      padding: 0;
-      padding-left: 20%;
-
-      :hover {
-        cursor: pointer;
-      }
-
-      .selected::before {
-        content: '\003E';
-        color: #f158b7;
-        font-weight: bold;
-        margin-right: 5px;
-      }
+    .flavour-image {
+      width: 200px;
+      transition: transform 0.3s ease;
     }
   }
 
@@ -128,12 +99,22 @@ main {
 
 section {
   padding: 20px;
-  /* margin: 20px 0; */
-  /* border: 1px solid #ccc; */
 }
+
 section h2 {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+figure {
+  display: grid;
+  margin: 0;
+}
+
+figcaption {
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
 footer {

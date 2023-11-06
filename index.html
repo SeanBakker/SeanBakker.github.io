@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>The Chunky Cookie</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/indexStyle.css">
 </head>
 <body>
+    <script src="scripts/enums.js"></script>
     <header>
         <h1 class="title">THE CHUNKY COOKIE</h1>
         <h4 class="sub-text">Where Happiness is Freshly-Baked</h4>
@@ -23,24 +24,37 @@
         </section>
 
         <header class="sub-header">
-            <h2 class="sub-header-text">Cookie Flavours</h2>
+            <h2 class="sub-header-text">Weekly Cookie Flavours</h2>
         </header>
 
-        <section class="flavor-section">
-            <ul class="flavor-list">
-                <li>Chocolate Chip Walnut</li>
-                <li>Double Dark Chocolate Chip</li>
-                <li>Ube White Chocolate Dream</li>
-                <li>S'mores Chocolate Chip</li>
-                <li>Cookie Monster</li>
-                <li>Biscoff Cookie Butter</li>
-            </ul>
-            <div class="image-container">
-                <button class="button prev-button" onclick="showPrevImage()">&lt;</button>
-                <img src="resources/images/flavours/chocolateChipWalnut.jpeg" class="flavor-image" id="flavorImage">
-                <button class="button next-button" onclick="showNextImage()">&gt;</button>
+        <section class="flavour-section">
+            <div class="image-container slideshow">
+                <figure>
+                    <img src="resources/images/flavours/chocolateChipWalnut.jpeg" class="flavour-image" id="flavourImage" draggable="false">
+                    <figcaption id="chocolateChipWalnutCaption"></figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/images/flavours/doubleDarkChocolateChip.jpeg" class="flavour-image" id="flavourImage" draggable="false">
+                    <figcaption id="doubleDarkChocolateChipCaption"></figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/images/flavours/ubeWhiteChocolateDream.jpeg" class="flavour-image" id="flavourImage" draggable="false">
+                    <figcaption id="ubeWhiteChocolateDreamCaption"></figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/images/flavours/smoresChocolateChip.jpg" class="flavour-image" id="flavourImage" draggable="false">
+                    <figcaption id="smoresChocolateChipCaption"></figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/images/flavours/cookieMonster.jpg" class="flavour-image" id="flavourImage" draggable="false">
+                    <figcaption id="cookieMonsterCaption"></figcaption>
+                </figure>
+                <figure>
+                    <img src="resources/images/flavours/biscoffCookieButter.jpeg" class="flavour-image" id="flavourImage" draggable="false">
+                    <figcaption id="biscoffCookieButterCaption"></figcaption>
+                </figure>
             </div>
-        </section>
+        </section>        
 
         <header class="sub-header">
             <h2 class="sub-header-text">Order Below!</h2>
@@ -55,6 +69,6 @@
         <p>&copy; 2023 The Chunky Cookie</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
