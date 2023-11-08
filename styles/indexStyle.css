@@ -1,24 +1,31 @@
+@font-face {
+  font-family: "BoldFont";
+  src: url('../resources/fonts/the_bold_font/THEBOLDFONT.ttf') format('truetype');
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
 }
 
 header {
-  font-family: "Futura", sans-serif;
+  font-family: "BoldFont", sans-serif;
   font-weight: bold;
   background-color: #ffc9c9;
   color: #000000;
   text-align: center;
-  padding: 20px 0;
+  padding: 100px 0;
 
   .title {
+    font-size: 2.8em;
+    padding-bottom: 10px;
     margin-block-end: 10px;
   }
 
   .sub-text {
-    /* font-family: "Futura", sans-serif; */
+    font-family: sans-serif;
     font-weight: normal;
     margin: 5px;
   }
@@ -42,7 +49,6 @@ main {
       max-width: 100%;
       max-height: 600px;
       padding: 0;
-      /* padding-bottom: 5px; */
       
       .image {
         width: 100%;
@@ -88,9 +94,9 @@ main {
     display: grid;
     justify-self: center;
     align-self: center;
-    width: 10%;
 
     .button {
+      width: 100px;
       background-color: #ffc9c9;
       border-width: 1px;
     }
