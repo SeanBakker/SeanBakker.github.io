@@ -19,7 +19,7 @@ header {
   padding: 100px 0;
 
   .title {
-    font-size: 7em;
+    font-size: 5em;
     padding-bottom: 10px;
     margin-block-end: 10px;
   }
@@ -67,7 +67,7 @@ main {
 
     .flavour-image {
       justify-self: center;
-      padding: 0 20px;
+      padding: 0 50px;
       width: 20vw;
     }
   }
@@ -78,9 +78,12 @@ main {
     align-self: center;
 
     .button {
+      scale: 1.5;
       width: 100px;
       background-color: #ffc9c9;
-      border-width: 1px;
+      border-width: 2px;
+      margin: 30px;
+      padding: 3px;
     }
   }
 }
@@ -88,7 +91,7 @@ main {
 .sub-text {
   font-family: sans-serif;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 5px;
 }
 
