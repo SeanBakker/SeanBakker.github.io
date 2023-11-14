@@ -124,14 +124,14 @@ footer {
 }
 
 /*** Styles for desktop ***/
-@media (min-width: 501px) {
+@media (min-width: 601px) {
   .sub-text {
     font-size: 1.2em;
   }
 }
 
 /*** Styles for mobile ***/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .sub-text {
     font-size: 0.8em;
   }
