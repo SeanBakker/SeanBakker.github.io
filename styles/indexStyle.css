@@ -5,6 +5,7 @@
 
 body {
   font-family: sans-serif;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -12,25 +13,19 @@ body {
 
 header {
   font-family: "BoldFont", sans-serif;
-  font-weight: bold;
   background-color: #ffc9c9;
   color: #000000;
   text-align: center;
   padding: 100px 0;
 
   .title {
-    font-size: 2.8em;
+    font-size: 7em;
     padding-bottom: 10px;
     margin-block-end: 10px;
   }
 
-  .sub-text {
-    font-family: sans-serif;
-    font-weight: normal;
-    margin: 5px;
-  }
-
   .sub-header-text {
+    font-size: 2em;
     margin: 10px;
   }
 }
@@ -64,29 +59,16 @@ main {
 
   .flavour-section {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    justify-items: center;
     align-items: center;
     overflow-x: hidden;
 
-    .image-container {
-      display: flex;
-
-      .slideshow {
-        width: 80vw;
-        max-width: 80vw;
-        overflow: hidden;
-        position: relative;
-      }
-
-      .slideshow:hover {
-        cursor: pointer;
-      }
-    }
-
     .flavour-image {
-      width: 200px;
-      transition: transform 0.3s ease;
+      justify-self: center;
+      padding: 0 20px;
+      width: 20vw;
     }
   }
 
@@ -103,12 +85,18 @@ main {
   }
 }
 
+.sub-text {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 5px;
+}
+
 section {
   padding: 20px;
 }
 
 section h2 {
-  font-size: 24px;
   margin-bottom: 10px;
 }
 
@@ -124,6 +112,7 @@ figcaption {
 }
 
 footer {
+  position: relative;
   background-color: #ffc9c9;
   color: #000000;
   text-align: center;
