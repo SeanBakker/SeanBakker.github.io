@@ -19,7 +19,7 @@ header {
   padding: 100px 0;
 
   .title {
-    font-size: 5em;
+    font-size: 6em;
     padding-bottom: 10px;
     margin-block-end: 10px;
   }
@@ -70,6 +70,11 @@ main {
       padding: 0 50px;
       width: 20vw;
     }
+
+    .sub-text {
+      font-size: 0.8em;
+      margin: 5px;
+    }
   }
 
   .order-section {
@@ -78,7 +83,7 @@ main {
     align-self: center;
 
     .button {
-      scale: 1.5;
+      scale: 2;
       width: 100px;
       background-color: #ffc9c9;
       border-width: 2px;
