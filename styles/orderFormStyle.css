@@ -1,6 +1,9 @@
-main {
-    
+@font-face {
+    font-family: "BoldFont";
+    src: url('../resources/fonts/the_bold_font/THEBOLDFONT.ttf') format('truetype');
 }
+
+main {}
 
 section {
     padding: 20px;
@@ -11,4 +14,14 @@ section {
 section h2 {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+footer {
+    position: relative;
+    background-color: #ffc9c9;
+    color: #000000;
+    text-align: center;
+    padding: 5px 0;
+    bottom: 0;
+    width: 100%;
 }

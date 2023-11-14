@@ -19,7 +19,7 @@ header {
   padding: 100px 0;
 
   .title {
-    font-size: 6em;
+    font-size: 10vw;
     padding-bottom: 10px;
     margin-block-end: 10px;
   }
@@ -70,11 +70,6 @@ main {
       padding: 0 50px;
       width: 20vw;
     }
-
-    .sub-text {
-      font-size: 0.8em;
-      margin: 5px;
-    }
   }
 
   .order-section {
@@ -96,7 +91,6 @@ main {
 .sub-text {
   font-family: sans-serif;
   font-weight: normal;
-  font-size: 1em;
   margin: 5px;
 }
 
@@ -127,4 +121,18 @@ footer {
   padding: 5px 0;
   bottom: 0;
   width: 100%;
+}
+
+/*** Styles for desktop ***/
+@media (min-width: 501px) {
+  .sub-text {
+    font-size: 1.2em;
+  }
+}
+
+/*** Styles for mobile ***/
+@media (max-width: 500px) {
+  .sub-text {
+    font-size: 0.8em;
+  }
 }
