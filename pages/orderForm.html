@@ -2,28 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Chunky Cookie - Order Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
     <link rel="stylesheet" href="../styles/indexStyle.css">
     <link rel="stylesheet" href="../styles/orderFormStyle.css">
 </head>
 <body>
-    <script src="scripts/enums.js"></script>
+    <script src="../scripts/enums.js"></script>
+
     <header>
         <h1 class="title">THE CHUNKY COOKIE</h1>
     </header>
 
     <main>
         <section class="order-section">
-            <div>
-                <img src="../resources/images/flavours/chocolateChipWalnut.jpeg" class="flavour-image" id="flavourImage" alt="chocolateChipWalnut" draggable="false">
+            <div class="product-image-container">
+                <img class="product-image" draggable="false">
+            </div>
+            <div class="product-details-container">
+                <p class="product-name"></p>
+                <p class="product-price"></p>
+                <p class="product-description"></p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 The Chunky Cookie</p>
+        <p>&copy; 2024 The Chunky Cookie</p>
     </footer>
 
-    <!-- <script src="scripts/main.js"></script> -->
+    <script src="../scripts/orderForm.js"></script>
 </body>
 </html>

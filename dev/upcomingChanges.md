@@ -11,6 +11,8 @@
 * Include slideshow for display images under the title header
 * Add back buttons for page navigation
 * Add a side bar for direct page navigation
+* Add a search bar for searching available items
+* Add a shopping cart to store items for later purchase at checkout
 
 
 ## Bug Fixes

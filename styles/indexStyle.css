@@ -65,14 +65,14 @@ main {
     align-items: center;
     overflow-x: hidden;
 
-    .flavour-image {
+    .product-image {
       justify-self: center;
       padding: 0 50px;
       width: 20vw;
     }
   }
 
-  .order-section {
+  .order-now {
     display: grid;
     justify-self: center;
     align-self: center;
@@ -110,7 +110,9 @@ figure {
 figcaption {
   display: grid;
   justify-content: center;
-  text-align: center;
+  text-align: left;
+  padding-top: 5px;
+  line-height: 1.5;
 }
 
 footer {

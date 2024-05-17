@@ -1,21 +1,35 @@
-/*** Define Variables ***/
+/*** Set Product Details ***/
 
-let currentImage = 0;
-const imagePaths = ['resources/images/flavours/chocolateChipWalnut.jpeg', 'resources/images/flavours/doubleDarkChocolateChip.jpeg', 'resources/images/flavours/ubeWhiteChocolateDream.jpeg',
-                    'resources/images/flavours/smoresChocolateChip.jpg', 'resources/images/flavours/cookieMonster.jpg', 'resources/images/flavours/biscoffCookieButter.jpeg'];
+function initializeFlavours() {
+    var productFigures = document.querySelectorAll('.flavour-section figure');
 
-/*** Retrieve Figure Captions ***/
+    // Set details for each product
+    productFigures.forEach(figure => {
+        const productKey = figure.getAttribute('data-product');
+        const productData = ProductEnum[productKey];
 
-// Retrieve the figure elements
-const figureElements = document.querySelectorAll('.flavour-section figure');
-const flavourKeys = Object.keys(FlavourEnum);
+        // Check if product data exists
+        if (!productData) {
+            console.error('Product data not found for key: ', productKey);
+            return;
+        }
 
-// Loop through the figure elements and set their respective flavour names
-figureElements.forEach(figure => {
-    const imagePath = figure.querySelector('.flavour-image').getAttribute('src');
-    const index = imagePaths.findIndex(path => path === imagePath);
-    const flavourName = FlavourEnum[flavourKeys[index]];
+        // Set image source and caption
+        figure.querySelector('.product-image').src = productData.imgSrc;
+        figure.querySelector('.sub-text').innerHTML = `${productData.name}<br>${productData.price}`;
 
-    const caption = figure.querySelector('figcaption');
-    caption.textContent = flavourName;
-});
+        figure.onclick = function() {
+            // Redirect to Product Order Form
+            const redirectUrl = 'pages/orderForm.html';
+
+            // Set query params for product
+            const queryParams = `?product=${encodeURIComponent(productKey)}`;
+            window.location.href = redirectUrl + queryParams;
+        }
+    });
+}
+
+
+/*** Window Actions ***/
+
+window.onload = initializeFlavours;
