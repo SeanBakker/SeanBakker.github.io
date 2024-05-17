@@ -3,7 +3,20 @@
     src: url('../resources/fonts/the_bold_font/THEBOLDFONT.ttf') format('truetype');
 }
 
-main {}
+main {
+    .order-section {
+        display: grid;
+        grid-template-columns: 1fr, 3fr;
+        justify-self: left;
+        width: 100%;
+        margin: 20px 0;
+
+        .flavour-image {
+            padding: 0 30px;
+            width: 20vw;
+        }
+    }
+}
 
 section {
     padding: 20px;
